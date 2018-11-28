@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="client-combined-3.14.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/client-combined-3.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/modeljunit-2.5-jar-with-dependencies.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/client-combined-3.14.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
