@@ -4,12 +4,14 @@ package unittest;
  * Created by Westchennn on 9/13/18.
  */
 
+import computeGPA.gpa;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.Set;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -22,29 +24,67 @@ import static org.junit.Assert.assertTrue;
 
 public class gpaUnitTest
 {
-    Set s = new HashSet();
+    gpa gpaObject;
 
     @Before
     public void setUp()
     {
-        s = new HashSet();
-        s.add("cat");
-        s.add("dog");
+        gpaObject = new gpa();
     }
 
     @Test
-    public void test1()
+    public void test_getGradeValue_129_1()
     {
-        s.add("cat");
-        assertTrue("Size of s is still 2", s.size()==2);
+        float gradeValue = gpaObject.getGradeValue("A+");
+        assertEquals("getGradeValue_testcase_129_wrong", 4.0f, gradeValue, 0.0);
     }
 
     @Test
-    public void test2()
+    public void test_getGradeValue_129_2()
     {
-        s.remove("cat");
-        assertTrue("Size of s is now 1", s.size()==1);
-        s.add("elephant");
-        assertTrue("Size of s is now 2", s.size()==2);
+        float gradeValue = gpaObject.getGradeValue("A");
+        assertEquals("getGradeValue_testcase_129_wrong", 4.0f, gradeValue, 0.0);
+    }
+
+    @Test
+    public void test_getGradeValue_139()
+    {
+        float gradeValue = gpaObject.getGradeValue("A-");
+        assertEquals("getGradeValue_testcase_139_wrong", 3.67f, gradeValue, 0.0);
+    }
+
+    @Test
+    public void test_getGradeValue_149()
+    {
+        float gradeValue = gpaObject.getGradeValue("B+");
+        assertEquals("getGradeValue_testcase_149_wrong", 3.33f, gradeValue, 0.0);
+    }
+
+    @Test
+    public void test_getGradeValue_159()
+    {
+        float gradeValue = gpaObject.getGradeValue("B");
+        assertEquals("getGradeValue_testcase_159_wrong", 3.0f, gradeValue, 0.0);
+    }
+
+    @Test
+    public void test_getGradeValue_169()
+    {
+        float gradeValue = gpaObject.getGradeValue("B-");
+        assertEquals("getGradeValue_testcase_169_wrong", 2.67f, gradeValue, 0.0);
+    }
+
+    @Test
+    public void test_getGradeValue_179()
+    {
+        float gradeValue = gpaObject.getGradeValue("C");
+        assertEquals("getGradeValue_testcase_179_wrong", 2.0f, gradeValue, 0.0);
+    }
+
+    @Test
+    public void test_getGradeValue_189()
+    {
+        float gradeValue = gpaObject.getGradeValue("F");
+        assertEquals("getGradeValue_testcase_189_wrong", 0.0f, gradeValue, 0.0);
     }
 }
