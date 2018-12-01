@@ -21,11 +21,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="gpa.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gpa.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/computeGPA/gpa.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2070">
-              <caret line="239" column="7" lean-forward="false" selection-start-line="239" selection-start-column="7" selection-end-line="255" selection-end-column="4" />
+            <state relative-caret-position="845">
+              <caret line="130" column="19" lean-forward="true" selection-start-line="130" selection-start-column="19" selection-end-line="130" selection-end-column="19" />
               <folding>
                 <element signature="e#2247#2248#0" expanded="true" />
                 <element signature="e#2297#2298#0" expanded="true" />
@@ -34,15 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gpaUnitTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gpaUnitTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/unittest/gpaUnitTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1232">
-              <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+            <state relative-caret-position="570">
+              <caret line="164" column="0" lean-forward="true" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#558#559#0" expanded="true" />
-                <element signature="e#595#596#0" expanded="true" />
+                <element signature="e#609#610#0" expanded="true" />
+                <element signature="e#646#647#0" expanded="true" />
+                <element signature="e#2374#2375#0" expanded="true" />
+                <element signature="e#2415#2416#0" expanded="true" />
+                <element signature="e#2963#2964#0" expanded="true" />
+                <element signature="e#3004#3005#0" expanded="true" />
+                <element signature="e#3547#3548#0" expanded="true" />
+                <element signature="e#3588#3589#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,8 +67,8 @@
       <file leaf-file-name="calculategpa.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/calculategpa.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="211" column="85" lean-forward="false" selection-start-line="211" selection-start-column="85" selection-end-line="211" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -93,9 +99,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/computeGPA/gpa.java" />
         <option value="$PROJECT_DIR$/src/GpaAdapter.java" />
         <option value="$PROJECT_DIR$/src/unittest/setTest.java" />
+        <option value="$PROJECT_DIR$/src/computeGPA/gpa.java" />
         <option value="$PROJECT_DIR$/src/unittest/gpaUnitTest.java" />
       </list>
     </option>
@@ -241,54 +247,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.gpaUnitTest">
-    <configuration default="false" name="TestGpa.testGPA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="modelBasedTestingGpa" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestGpa" />
-      <option name="METHOD_NAME" value="testGPA" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="gpaUnitTest.test_getGradeValue_129_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="unittest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="modelBasedTestingGpa" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="unittest" />
-      <option name="MAIN_CLASS_NAME" value="unittest.gpaUnitTest" />
-      <option name="METHOD_NAME" value="test_getGradeValue_129_1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.gpaUnitTest.test_moreCourses_13">
     <configuration default="false" name="gpaUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -315,7 +274,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="gpaUnitTest.test_getGradeValue_169" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="gpaUnitTest.test_getCourseName_12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="unittest.*" />
@@ -327,7 +286,85 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="unittest" />
       <option name="MAIN_CLASS_NAME" value="unittest.gpaUnitTest" />
-      <option name="METHOD_NAME" value="test_getGradeValue_169" />
+      <option name="METHOD_NAME" value="test_getCourseName_12" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="gpaUnitTest.test_setCourse_134" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="unittest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="modelBasedTestingGpa" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unittest" />
+      <option name="MAIN_CLASS_NAME" value="unittest.gpaUnitTest" />
+      <option name="METHOD_NAME" value="test_setCourse_134" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="gpaUnitTest.test_moreCourses_12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="unittest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="modelBasedTestingGpa" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unittest" />
+      <option name="MAIN_CLASS_NAME" value="unittest.gpaUnitTest" />
+      <option name="METHOD_NAME" value="test_moreCourses_12" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="gpaUnitTest.test_moreCourses_13" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="unittest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="modelBasedTestingGpa" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unittest" />
+      <option name="MAIN_CLASS_NAME" value="unittest.gpaUnitTest" />
+      <option name="METHOD_NAME" value="test_moreCourses_13" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -753,19 +790,21 @@
         </option>
       </method>
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 8.0.49" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestGpa.testGPA" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_getGradeValue_129_1" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.gpaUnitTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_getGradeValue_169" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.gpaUnitTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_getCourseName_12" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_setCourse_134" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_moreCourses_12" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_moreCourses_13" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.gpaUnitTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_getGradeValue_169" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_getGradeValue_129_1" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestGpa.testGPA" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_moreCourses_13" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_moreCourses_12" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_setCourse_134" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.gpaUnitTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_getCourseName_12" />
       </list>
     </recent_temporary>
   </component>
@@ -779,44 +818,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543423213323</updated>
-      <workItem from="1543423219013" duration="5778000" />
+      <workItem from="1543423219013" duration="8980000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="gpaUnitTest - 2018.11.30 at 15h 32m 02s.xml">
+    <history-entry file="gpaUnitTest - 2018.12.01 at 13h 21m 58s.xml">
       <configuration name="gpaUnitTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="gpaUnitTest - 2018.11.30 at 15h 33m 46s.xml">
+    <history-entry file="gpaUnitTest - 2018.12.01 at 13h 43m 10s.xml">
       <configuration name="gpaUnitTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="gpaUnitTest - 2018.11.30 at 15h 40m 15s.xml">
+    <history-entry file="gpaUnitTest - 2018.12.01 at 13h 43m 35s.xml">
       <configuration name="gpaUnitTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="gpaUnitTest_test_getGradeValue_129_1 - 2018.11.30 at 15h 25m 51s.xml">
-      <configuration name="gpaUnitTest.test_getGradeValue_129_1" configurationId="JUnit" />
+    <history-entry file="gpaUnitTest_test_moreCourses_12 - 2018.12.01 at 13h 52m 46s.xml">
+      <configuration name="gpaUnitTest.test_moreCourses_12" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="gpaUnitTest_test_getGradeValue_129_1 - 2018.11.30 at 15h 26m 45s.xml">
-      <configuration name="gpaUnitTest.test_getGradeValue_129_1" configurationId="JUnit" />
+    <history-entry file="gpaUnitTest_test_moreCourses_13 - 2018.12.01 at 13h 53m 22s.xml">
+      <configuration name="gpaUnitTest.test_moreCourses_13" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="gpaUnitTest_test_getGradeValue_129_1 - 2018.11.30 at 15h 27m 01s.xml">
-      <configuration name="gpaUnitTest.test_getGradeValue_129_1" configurationId="JUnit" />
+    <history-entry file="gpaUnitTest_test_setCourse_134 - 2018.12.01 at 13h 40m 03s.xml">
+      <configuration name="gpaUnitTest.test_setCourse_134" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="gpaUnitTest_test_getGradeValue_129_1 - 2018.11.30 at 15h 27m 41s.xml">
-      <configuration name="gpaUnitTest.test_getGradeValue_129_1" configurationId="JUnit" />
+    <history-entry file="gpaUnitTest_test_setCourse_134 - 2018.12.01 at 13h 40m 13s.xml">
+      <configuration name="gpaUnitTest.test_setCourse_134" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="gpaUnitTest_test_getGradeValue_129_1 - 2018.11.30 at 15h 29m 18s.xml">
-      <configuration name="gpaUnitTest.test_getGradeValue_129_1" configurationId="JUnit" />
+    <history-entry file="gpaUnitTest_test_setCourse_134 - 2018.12.01 at 13h 40m 43s.xml">
+      <configuration name="gpaUnitTest.test_setCourse_134" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="gpaUnitTest_test_getGradeValue_129_1 - 2018.11.30 at 15h 29m 43s.xml">
-      <configuration name="gpaUnitTest.test_getGradeValue_129_1" configurationId="JUnit" />
+    <history-entry file="gpaUnitTest_test_setCourse_134 - 2018.12.01 at 13h 41m 27s.xml">
+      <configuration name="gpaUnitTest.test_setCourse_134" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="gpaUnitTest_test_getGradeValue_169 - 2018.11.30 at 15h 32m 39s.xml">
-      <configuration name="gpaUnitTest.test_getGradeValue_169" configurationId="JUnit" />
+    <history-entry file="gpaUnitTest_test_setCourse_134 - 2018.12.01 at 13h 44m 24s.xml">
+      <configuration name="gpaUnitTest.test_setCourse_134" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5778000" />
+    <option name="totallyTimeSpent" value="8980000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -824,7 +863,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.503231" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -844,7 +883,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.49676898" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -865,7 +904,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -882,23 +921,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EmptyTemplateForChrome_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/calculategpa.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -954,25 +977,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/unittest/gpaUnitTest.java">
+    <entry file="file://$PROJECT_DIR$/web/calculategpa.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="211" column="85" lean-forward="false" selection-start-line="211" selection-start-column="85" selection-end-line="211" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EmptyTemplateForChrome_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/computeGPA/gpa.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2070">
-          <caret line="239" column="7" lean-forward="false" selection-start-line="239" selection-start-column="7" selection-end-line="255" selection-end-column="4" />
+        <state relative-caret-position="845">
+          <caret line="130" column="19" lean-forward="true" selection-start-line="130" selection-start-column="19" selection-end-line="130" selection-end-column="19" />
           <folding>
             <element signature="e#2247#2248#0" expanded="true" />
             <element signature="e#2297#2298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unittest/gpaUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="164" column="0" lean-forward="true" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#2374#2375#0" expanded="true" />
+            <element signature="e#2415#2416#0" expanded="true" />
+            <element signature="e#2963#2964#0" expanded="true" />
+            <element signature="e#3004#3005#0" expanded="true" />
+            <element signature="e#3547#3548#0" expanded="true" />
+            <element signature="e#3588#3589#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -8,7 +8,9 @@ import computeGPA.gpa;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
@@ -88,5 +90,86 @@ public class gpaUnitTest
         assertEquals("getGradeValue_testcase_189_wrong", 0.0f, gradeValue, 0.0);
     }
 
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void test_getCourseName_13()
+    {
+        gpaObject.getCourseName();
+    }
+
+    // This part is a little bit tricky, cause this function depend on another function
+    // Cause if I want to test the functionality of getCourseName, I have to assume setCourse is valid firstly
+    // I will test setCourse later
+    @Test
+    public void test_getCourseName_12()
+    {
+        gpaObject.setCourse("courseOne", "3", "A");
+        assertEquals("getCourseName_testcase_12_wrong","courseOne",  gpaObject.getCourseName());
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void test_getCourseHours_13()
+    {
+        gpaObject.getCourseName();
+    }
+
+    // This part is a little bit tricky, cause this function depend on another function
+    // Cause if I want to test the functionality of getCourseHours, I have to assume setCourse is valid firstly
+    // I will test setCourse later
+    @Test
+    public void test_getCourseHours_12()
+    {
+        gpaObject.setCourse("courseOne", "3", "A");
+        assertEquals("getCourseHours_testcase_12_wrong", 3, gpaObject.getCourseHours());
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void test_getCourseGrades_13()
+    {
+        gpaObject.getCourseName();
+    }
+
+    // This part is a little bit tricky, cause this function depend on another function
+    // Cause if I want to test the functionality of getCourseGrades, I have to assume setCourse is valid firstly
+    // I will test setCourse later
+    @Test
+    public void test_getCourseGrades_12()
+    {
+        gpaObject.setCourse("courseOne", "3", "A");
+        assertEquals("getCourseGrades_testcase_12_wrong", "A", gpaObject.getCourseGrade());
+    }
+
+    @Test
+    public void test_setCourse_124()
+    {
+        gpaObject.setCourse("courseOne", "2", "A");
+        assertEquals("setCourse_124_courseName_wrong","courseOne", gpaObject.getCourseName());
+        assertEquals("setCourse_124_courseHours_wrong",2, gpaObject.getCourseHours());
+        assertEquals("setCourse_124_courseGrades_wrong", "A", gpaObject.getCourseGrade());
+    }
+
+    @Test
+    public void test_setCourse_134()
+    {
+        gpaObject.setCourse("courseOne", "test", "A");
+        assertEquals("setCourse_134_courseName_wrong", "courseOne", gpaObject.getCourseGrade());
+        assertEquals("setCourse_134_courseHours_wrong",3, gpaObject.getCourseHours());
+        assertEquals("setCourse_134_courseGrades_wrong","A", gpaObject.getCourseGrade());
+    }
+
+    @Test
+    public void test_moreCourses_12()
+    {
+        boolean moreCourse = gpaObject.moreCourses();
+        assertEquals("moreCourse_12_wrong", false, moreCourse);
+    }
+
+    // depend on setCourse
+    @Test
+    public void test_moreCourses_13()
+    {
+        gpaObject.setCourse("courseOne", "test", "A");
+        boolean moreCourse = gpaObject.moreCourses();
+        assertEquals("moreCourse_12_wrong", true, moreCourse);
+    }
 
 }
