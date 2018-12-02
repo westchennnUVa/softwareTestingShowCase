@@ -173,7 +173,7 @@ public class gpaUnitTest
     }
 
     // 1278 is invalid path
-    // 1235678 is invalid path
+    // 12356278 is invalid path
     // 1234679 is invalid path
     @Test
     public void test_getGpa_1279()
@@ -183,19 +183,19 @@ public class gpaUnitTest
     }
 
     @Test
-    public void test_getGpa_1234678()
+    public void test_getGpa_12346278()
     {
         gpaObject.setCourse("courseOne","3","A");
         float gpa = gpaObject.getGpa();
-        assertEquals("getGpa_1234678_wrong", 4.0f, gpa, 0.0);
+        assertEquals("getGpa_12346278_wrong", 4.0f, gpa, 0.0);
     }
 
     @Test
-    public void test_getGpa_1235679()
+    public void test_getGpa_12356279()
     {
         gpaObject.setCourse("courseOne","3","F");
         float gpa = gpaObject.getGpa();
-        assertEquals("getGpa_1234678_wrong", 0.0f, gpa, 0.0);
+        assertEquals("getGpa_12356279_wrong", 0.0f, gpa, 0.0);
     }
 
 }

@@ -37,8 +37,8 @@
       <file leaf-file-name="gpaUnitTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/unittest/gpaUnitTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2295">
-              <caret line="153" column="93" lean-forward="false" selection-start-line="153" selection-start-column="93" selection-end-line="153" selection-end-column="93" />
+            <state relative-caret-position="77">
+              <caret line="176" column="13" lean-forward="false" selection-start-line="176" selection-start-column="13" selection-end-line="176" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#609#610#0" expanded="true" />
@@ -818,18 +818,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543423213323</updated>
-      <workItem from="1543423219013" duration="11110000" />
+      <workItem from="1543423219013" duration="11724000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="gpaUnitTest - 2018.12.01 at 13h 43m 10s.xml">
-      <configuration name="gpaUnitTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="gpaUnitTest - 2018.12.01 at 13h 43m 35s.xml">
       <configuration name="gpaUnitTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="gpaUnitTest - 2018.12.01 at 20h 11m 55s.xml">
+      <configuration name="gpaUnitTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="gpaUnitTest - 2018.12.01 at 20h 12m 17s.xml">
       <configuration name="gpaUnitTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="gpaUnitTest_test_getGpa_1234678 - 2018.12.01 at 20h 10m 03s.xml">
@@ -855,7 +855,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11110000" />
+    <option name="totallyTimeSpent" value="11724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -880,10 +880,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.49676898" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329927" sideWeight="0.49676898" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1006,8 +1006,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/unittest/gpaUnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="153" column="93" lean-forward="false" selection-start-line="153" selection-start-column="93" selection-end-line="153" selection-end-column="93" />
+        <state relative-caret-position="77">
+          <caret line="176" column="13" lean-forward="false" selection-start-line="176" selection-start-column="13" selection-end-line="176" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#609#610#0" expanded="true" />
