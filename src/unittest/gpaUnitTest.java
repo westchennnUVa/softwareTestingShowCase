@@ -151,7 +151,7 @@ public class gpaUnitTest
     public void test_setCourse_134()
     {
         gpaObject.setCourse("courseOne", "test", "A");
-        assertEquals("setCourse_134_courseName_wrong", "courseOne", gpaObject.getCourseGrade());
+        assertEquals("setCourse_134_courseName_wrong", "courseOne", gpaObject.getCourseName());
         assertEquals("setCourse_134_courseHours_wrong",3, gpaObject.getCourseHours());
         assertEquals("setCourse_134_courseGrades_wrong","A", gpaObject.getCourseGrade());
     }
@@ -170,6 +170,32 @@ public class gpaUnitTest
         gpaObject.setCourse("courseOne", "test", "A");
         boolean moreCourse = gpaObject.moreCourses();
         assertEquals("moreCourse_12_wrong", true, moreCourse);
+    }
+
+    // 1278 is invalid path
+    // 1235678 is invalid path
+    // 1234679 is invalid path
+    @Test
+    public void test_getGpa_1279()
+    {
+        float gpa = gpaObject.getGpa();
+        assertEquals("getGpa_1279_wrong", 0f, gpa, 0.0);
+    }
+
+    @Test
+    public void test_getGpa_1234678()
+    {
+        gpaObject.setCourse("courseOne","3","A");
+        float gpa = gpaObject.getGpa();
+        assertEquals("getGpa_1234678_wrong", 4.0f, gpa, 0.0);
+    }
+
+    @Test
+    public void test_getGpa_1235679()
+    {
+        gpaObject.setCourse("courseOne","3","F");
+        float gpa = gpaObject.getGpa();
+        assertEquals("getGpa_1234678_wrong", 0.0f, gpa, 0.0);
     }
 
 }
