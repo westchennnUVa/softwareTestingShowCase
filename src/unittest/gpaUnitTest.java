@@ -198,6 +198,23 @@ public class gpaUnitTest
         assertEquals("getGpa_12356279_wrong", 0.0f, gpa, 0.0);
     }
 
+    @Test
+    public void test_getGpa_123462356278_extra()
+    {
+        gpaObject.setCourse("courseOne","3","A");
+        gpaObject.setCourse("courseOne","3","F");
+        float gpa = gpaObject.getGpa();
+        assertEquals("getGpa_123462356278_wrong", 4.0f, gpa, 0.0);
+    }
+
+    @Test
+    public void test_getGpa_123462346278_extra()
+    {
+        gpaObject.setCourse("courseOne","3","A");
+        gpaObject.setCourse("courseOne","3","A-");
+        float gpa = gpaObject.getGpa();
+        assertEquals("getGpa_123462346278_wrong", 3.83f, gpa, 0.01);
+    }
 
     @Test
     public void test_getSummaryMessage_1234591011121314151620(){
