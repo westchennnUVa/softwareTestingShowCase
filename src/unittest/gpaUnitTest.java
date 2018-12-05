@@ -198,4 +198,176 @@ public class gpaUnitTest
         assertEquals("getGpa_12356279_wrong", 0.0f, gpa, 0.0);
     }
 
+
+    @Test
+    public void test_getSummaryMessage_1234591011121314151620(){
+        gpaObject.setCourse("courseOne", "3", "F");
+        gpaObject.setCourse("courseTwo", "3", "C");
+        gpaObject.setCourse("courseThree", "3", "C");
+        gpaObject.setCourse("courseFour", "3", "C");
+        gpaObject.setCourse("courseFive", "3", "B");
+        gpaObject.setCourse("courseSix", "3", "B");
+        gpaObject.setCourse("courseSeven", "3", "B");
+        gpaObject.setCourse("courseEight", "3", "B");
+        gpaObject.setCourse("courseNine", "3", "B");
+        gpaObject.setCourse("courseTen", "3", "B");
+        gpaObject.setCourse("courseEleven", "3", "B");
+        gpaObject.setCourse("courseTwelve", "3", "B");
+        String result = gpaObject.getSummaryMessage();
+        String groundTruth = "Fs cannot be used to graduate, so are not included in the total number of hours accumulated.\n"
+                + "Fs are also not included in your GPA calculation.<br/><br/>\n"
+                + "Only 2 grades of C are allowed for graduation and 3 were submitted, so the additional Cs are not included in the total number of hours accumulated.<br/><br/>\n"
+                + "You have 30 hours, which is enough to graduate with an MS degree.<br/>\n"
+                + "However, you do not have the minimum GPA of 3.0.<br/>\n";
+        assertEquals("getSummaryMessage_1234591011121314151620_Wrong", groundTruth, result);
+    }
+
+    @Test
+    public void test_getSummaryMessage_1234691012141520()
+    {
+        gpaObject.setCourse("courseTwo", "3", "C");
+        gpaObject.setCourse("courseThree", "3", "C");
+        gpaObject.setCourse("courseFour", "3", "C");
+        gpaObject.setCourse("courseFive", "3", "A");
+        gpaObject.setCourse("courseSix", "3", "A");
+        gpaObject.setCourse("courseSeven", "3", "A");
+        gpaObject.setCourse("courseEight", "3", "A");
+        gpaObject.setCourse("courseNine", "3", "A");
+        gpaObject.setCourse("courseTen", "3", "A");
+        gpaObject.setCourse("courseEleven", "3", "A");
+        gpaObject.setCourse("courseTwelve", "3", "A");
+        String result = gpaObject.getSummaryMessage();
+        String groundTruth = "Only 2 grades of C are allowed for graduation and 3 were submitted, so the additional Cs are not included in the total number of hours accumulated.<br/><br/>\n"
+                + "You have 30 hours, which is enough to graduate with an MS degree.<br/>\n";
+        assertEquals("getSummaryMessage_1234691012141520_Wrong", groundTruth, result);
+    }
+
+    @Test
+    public void test_getSummaryMessage_123791011121417181920()
+    {
+        gpaObject.setCourse("courseTwo", "3", "F");
+        gpaObject.setCourse("courseThree", "3", "A");
+        gpaObject.setCourse("courseFour", "3", "A");
+        gpaObject.setCourse("courseFive", "3", "A");
+        gpaObject.setCourse("courseSix", "3", "A");
+        gpaObject.setCourse("courseSeven", "3", "A");
+        gpaObject.setCourse("courseEight", "3", "A");
+        String result = gpaObject.getSummaryMessage();
+        String groundTruth = "Fs cannot be used to graduate, so are not included in the total number of hours accumulated.\n"
+                + "Fs are also not included in your GPA calculation.<br/><br/>\n"
+                + "You need 12 more hours to graduate.<br/>\n"
+                + "You must average a GPA of 2.0 (at least a C average) in those classes\n"
+                + "to graduate with a GPA of 3.0 or above.<br/>\n"
+                + "Also, you may only use two grades of C in your MS degree.<br/>\n";
+        assertEquals("getSummaryMessage_123791011121417181920_Wrong", groundTruth, result);
+    }
+
+    @Test
+    public void test_getSummaryMessage_12389101214171920()
+    {
+        gpaObject.setCourse("courseTwo", "3", "F");
+        gpaObject.setCourse("courseThree", "3", "B");
+        gpaObject.setCourse("courseFour", "3", "B");
+        gpaObject.setCourse("courseFive", "3", "B");
+        gpaObject.setCourse("courseSix", "3", "B");
+        gpaObject.setCourse("courseSeven", "3", "B-");
+        gpaObject.setCourse("courseEight", "3", "B");
+        String result = gpaObject.getSummaryMessage();
+        String groundTruth = "Fs cannot be used to graduate, so are not included in the total number of hours accumulated.\n"
+                + "Fs are also not included in your GPA calculation.<br/><br/>\n"
+                + "You need 12 more hours to graduate.<br/>\n"
+                + "You must average a GPA of 3.0824997 (at least a B+ average) in those classes\n"
+                + "to graduate with a GPA of 3.0 or above.<br/>\n"
+                + "Also, you may only use two grades of C in your MS degree.<br/>\n";
+        assertEquals("getSummaryMessage_12389101214171920_Wrong", groundTruth, result);
+    }
+
+    @Test
+    public void test_getHours_12324()
+    {
+        gpaObject.setCourse("courseTwo", "3", "F");
+        gpaObject.setCourse("courseThree", "3", "B");
+        gpaObject.setCourse("courseFour", "3", "B");
+        gpaObject.setCourse("courseFive", "3", "B");
+        assertEquals("getHours_12324_Wrong", 12, gpaObject.getHours());
+    }
+
+    @Test
+    public void test_getHours_124()
+    {
+        assertEquals("getHours_124_Wrong", 0, gpaObject.getHours());
+    }
+
+    @Test
+    public void test_getNeededGPA_12324()
+    {
+        gpaObject.setCourse("courseTwo", "3", "F");
+        gpaObject.setCourse("courseThree", "3", "B");
+        gpaObject.setCourse("courseFour", "3", "B");
+        gpaObject.setCourse("courseFive", "3", "B");
+        assertEquals("getNeededGPA_12324_Wrong", 3.5, gpaObject.getNeededGPA(), 0);
+    }
+
+
+
+    @Test
+    public void test_getNeededGPA_124()
+    {
+        assertEquals("getNeededGPA_124_Wrong", 3.0, gpaObject.getNeededGPA(), 0);
+    }
+
+    @Test
+    public void test_getLetterGrade_12()
+    {
+        assertEquals("getLetterGrade_12_Wrong", "A", gpaObject.getLetterGrade(3.8f));
+    }
+
+    @Test
+    public void test_getLetterGrade_13()
+    {
+        assertEquals("getLetterGrade_13_Wrong", "A-", gpaObject.getLetterGrade(3.5f));
+    }
+
+    @Test
+    public void test_getLetterGrade_14()
+    {
+        assertEquals("getLetterGrade_14_Wrong", "B+", gpaObject.getLetterGrade(3.2f));
+    }
+
+    @Test
+    public void test_getLetterGrade_15()
+    {
+        assertEquals("getLetterGrade_15_Wrong", "B", gpaObject.getLetterGrade(2.9f));
+    }
+
+    @Test
+    public void test_getLetterGrade_16()
+    {
+        assertEquals("getLetterGrade_16_Wrong", "B-", gpaObject.getLetterGrade(2.2f));
+    }
+
+    @Test
+    public void test_getLetterGrade_17()
+    {
+        assertEquals("getLetterGrade_17_Wrong", "C", gpaObject.getLetterGrade(1.8f));
+    }
+
+    @Test
+    public void test_getLetterGrade_18()
+    {
+        assertEquals("getLetterGrade_18_Wrong", "F", gpaObject.getLetterGrade(0.0f));
+    }
+
+    @Test
+    public void test_getLetterGrade_extra1()
+    {
+        assertEquals("getLetterGrade_extra1_Wrong", "F", gpaObject.getLetterGrade(-0.6f));
+    }
+
+    @Test
+    public void test_getLetterGrade_extra2()
+    {
+        assertEquals("getLetterGrade_extra2_Wrong", "A", gpaObject.getLetterGrade(6.0f));
+    }
+
 }
