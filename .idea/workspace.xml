@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="536ae981-e82c-4ef4-9eb9-14cd123a0934" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/modelBasedTestingGpa_war_exploded/WEB-INF/classes/unittest/gpaUnitTest.class" afterPath="$PROJECT_DIR$/out/artifacts/modelBasedTestingGpa_war_exploded/WEB-INF/classes/unittest/gpaUnitTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/modelBasedTestingGpa/unittest/gpaUnitTest.class" afterPath="$PROJECT_DIR$/out/production/modelBasedTestingGpa/unittest/gpaUnitTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/unittest/gpaUnitTest.java" afterPath="$PROJECT_DIR$/src/unittest/gpaUnitTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,7 +29,7 @@
       <file leaf-file-name="gpa.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/computeGPA/gpa.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="-3508">
               <caret line="76" column="17" lean-forward="false" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
               <folding>
                 <element signature="e#2012#2013#0" expanded="true" />
@@ -39,12 +42,17 @@
       <file leaf-file-name="gpaUnitTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/unittest/gpaUnitTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4455">
-              <caret line="333" column="82" lean-forward="false" selection-start-line="333" selection-start-column="82" selection-end-line="333" selection-end-column="82" />
+            <state relative-caret-position="-4545">
+              <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1245#1246#0" expanded="true" />
-                <element signature="e#1274#1275#0" expanded="true" />
+                <element signature="e#1414#1415#0" expanded="true" />
+                <element signature="e#1443#1444#0" expanded="true" />
+                <element signature="e#5764#5765#0" expanded="true" />
+                <element signature="e#5805#5806#0" expanded="true" />
+                <element signature="e#6585#6586#0" expanded="true" />
+                <element signature="e#6626#6627#0" expanded="true" />
+                <element signature="e#7414#7415#0" expanded="true" />
+                <element signature="e#7455#7456#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,7 +63,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#906#907#0" expanded="false" />
+                <element signature="e#973#974#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,7 +75,7 @@
       <file leaf-file-name="calculategpa.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/calculategpa.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="3165">
               <caret line="211" column="85" lean-forward="false" selection-start-line="211" selection-start-column="85" selection-end-line="211" selection-end-column="85" />
               <folding />
             </state>
@@ -140,9 +152,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -235,6 +244,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,7 +268,7 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.gpaUnitTest">
-    <configuration default="false" name="gpaUnitTest.test_moreCourses_13" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="gpaUnitTest.test_getSummaryMessage_1234591011121314151620" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="unittest.*" />
@@ -268,7 +280,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="unittest" />
       <option name="MAIN_CLASS_NAME" value="unittest.gpaUnitTest" />
-      <option name="METHOD_NAME" value="test_moreCourses_13" />
+      <option name="METHOD_NAME" value="test_getSummaryMessage_1234591011121314151620" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -282,7 +294,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="gpaUnitTest.test_getGpa_12356279" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="gpaUnitTest.test_getNeededGPA_12324" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="unittest.*" />
@@ -294,7 +306,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="unittest" />
       <option name="MAIN_CLASS_NAME" value="unittest.gpaUnitTest" />
-      <option name="METHOD_NAME" value="test_getGpa_12356279" />
+      <option name="METHOD_NAME" value="test_getNeededGPA_12324" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -308,7 +320,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="gpaUnitTest.test_getGpa_123462356278_extra" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="gpaUnitTest.test_getSummaryMessage_123791011121417181920" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="unittest.*" />
@@ -320,7 +332,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="unittest" />
       <option name="MAIN_CLASS_NAME" value="unittest.gpaUnitTest" />
-      <option name="METHOD_NAME" value="test_getGpa_123462356278_extra" />
+      <option name="METHOD_NAME" value="test_getSummaryMessage_123791011121417181920" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -334,7 +346,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="gpaUnitTest.test_getGpa_123462346278_extra" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="gpaUnitTest.test_getSummaryMessage_12389101214171920" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="unittest.*" />
@@ -346,7 +358,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="unittest" />
       <option name="MAIN_CLASS_NAME" value="unittest.gpaUnitTest" />
-      <option name="METHOD_NAME" value="test_getGpa_123462346278_extra" />
+      <option name="METHOD_NAME" value="test_getSummaryMessage_12389101214171920" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -824,19 +836,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 8.0.49" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_moreCourses_13" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_getGpa_12356279" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_getGpa_123462356278_extra" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_getGpa_123462346278_extra" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_getSummaryMessage_1234591011121314151620" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_getNeededGPA_12324" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_getSummaryMessage_123791011121417181920" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_getSummaryMessage_12389101214171920" />
       <item index="5" class="java.lang.String" itemvalue="JUnit.gpaUnitTest" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.gpaUnitTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_getGpa_123462346278_extra" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_getGpa_123462356278_extra" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_getGpa_12356279" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_moreCourses_13" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_getSummaryMessage_12389101214171920" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_getSummaryMessage_1234591011121314151620" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_getSummaryMessage_123791011121417181920" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.gpaUnitTest.test_getNeededGPA_12324" />
       </list>
     </recent_temporary>
   </component>
@@ -854,47 +866,48 @@
       <workItem from="1543892016489" duration="86000" />
       <workItem from="1543892445960" duration="73000" />
       <workItem from="1543979155453" duration="1005000" />
-      <workItem from="1544122474387" duration="4717000" />
+      <workItem from="1544122474387" duration="5857000" />
+      <workItem from="1544158289974" duration="4684000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="gpaUnitTest_test_getCourseHours_12 - 2018.12.06 at 15h 05m 07s.xml">
-      <configuration name="gpaUnitTest.test_getCourseHours_12" configurationId="JUnit" />
+    <history-entry file="gpaUnitTest - 2018.12.07 at 11h 20m 55s.xml">
+      <configuration name="gpaUnitTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="gpaUnitTest_test_getGpa_123462346278_extra - 2018.12.06 at 15h 13m 54s.xml">
-      <configuration name="gpaUnitTest.test_getGpa_123462346278_extra" configurationId="JUnit" />
+    <history-entry file="gpaUnitTest_test_getNeededGPA_12324 - 2018.12.07 at 11h 00m 04s.xml">
+      <configuration name="gpaUnitTest.test_getNeededGPA_12324" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="gpaUnitTest_test_getGpa_123462346278_extra - 2018.12.06 at 15h 14m 19s.xml">
-      <configuration name="gpaUnitTest.test_getGpa_123462346278_extra" configurationId="JUnit" />
+    <history-entry file="gpaUnitTest_test_getSummaryMessage_1234591011121314151620 - 2018.12.07 at 11h 09m 50s.xml">
+      <configuration name="gpaUnitTest.test_getSummaryMessage_1234591011121314151620" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="gpaUnitTest_test_getGpa_123462356278_extra - 2018.12.06 at 15h 12m 59s.xml">
-      <configuration name="gpaUnitTest.test_getGpa_123462356278_extra" configurationId="JUnit" />
+    <history-entry file="gpaUnitTest_test_getSummaryMessage_1234591011121314151620 - 2018.12.07 at 11h 12m 32s.xml">
+      <configuration name="gpaUnitTest.test_getSummaryMessage_1234591011121314151620" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="gpaUnitTest_test_getGpa_12346278 - 2018.12.06 at 15h 03m 35s.xml">
-      <configuration name="gpaUnitTest.test_getGpa_12346278" configurationId="JUnit" />
+    <history-entry file="gpaUnitTest_test_getSummaryMessage_123791011121417181920 - 2018.12.07 at 11h 03m 44s.xml">
+      <configuration name="gpaUnitTest.test_getSummaryMessage_123791011121417181920" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="gpaUnitTest_test_getGpa_12346278 - 2018.12.06 at 15h 04m 03s.xml">
-      <configuration name="gpaUnitTest.test_getGpa_12346278" configurationId="JUnit" />
+    <history-entry file="gpaUnitTest_test_getSummaryMessage_123791011121417181920 - 2018.12.07 at 11h 04m 35s.xml">
+      <configuration name="gpaUnitTest.test_getSummaryMessage_123791011121417181920" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="gpaUnitTest_test_getGpa_12356279 - 2018.12.06 at 15h 09m 57s.xml">
-      <configuration name="gpaUnitTest.test_getGpa_12356279" configurationId="JUnit" />
+    <history-entry file="gpaUnitTest_test_getSummaryMessage_123791011121417181920 - 2018.12.07 at 11h 07m 26s.xml">
+      <configuration name="gpaUnitTest.test_getSummaryMessage_123791011121417181920" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="gpaUnitTest_test_moreCourses_13 - 2018.12.06 at 14h 58m 43s.xml">
-      <configuration name="gpaUnitTest.test_moreCourses_13" configurationId="JUnit" />
+    <history-entry file="gpaUnitTest_test_getSummaryMessage_12389101214171920 - 2018.12.07 at 11h 14m 44s.xml">
+      <configuration name="gpaUnitTest.test_getSummaryMessage_12389101214171920" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="gpaUnitTest_test_moreCourses_13 - 2018.12.06 at 15h 06m 44s.xml">
-      <configuration name="gpaUnitTest.test_moreCourses_13" configurationId="JUnit" />
+    <history-entry file="gpaUnitTest_test_getSummaryMessage_12389101214171920 - 2018.12.07 at 11h 15m 14s.xml">
+      <configuration name="gpaUnitTest.test_getSummaryMessage_12389101214171920" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="gpaUnitTest_test_setCourse_124 - 2018.12.06 at 15h 05m 49s.xml">
-      <configuration name="gpaUnitTest.test_setCourse_124" configurationId="JUnit" />
+    <history-entry file="gpaUnitTest_test_getSummaryMessage_12389101214171920 - 2018.12.07 at 11h 17m 18s.xml">
+      <configuration name="gpaUnitTest.test_getSummaryMessage_12389101214171920" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17787000" />
+    <option name="totallyTimeSpent" value="23611000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -911,7 +924,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -919,7 +932,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329927" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2657512" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26979" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -940,7 +953,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/unittest/gpaUnitTest.java</url>
+          <line>541</line>
+          <properties class="unittest.gpaUnitTest" method="test_getNeededGPA_12324" />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -951,8 +972,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/computeGPA/gpa.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="112" column="33" lean-forward="false" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
+        <state relative-caret-position="1020">
+          <caret line="76" column="17" lean-forward="false" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
           <folding>
             <element signature="e#2012#2013#0" expanded="true" />
             <element signature="e#2060#2061#0" expanded="true" />
@@ -965,9 +986,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-            <element signature="e#1274#1275#0" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="true" />
+            <element signature="e#1443#1444#0" expanded="true" />
+            <element signature="e#5764#5765#0" expanded="true" />
+            <element signature="e#5805#5806#0" expanded="true" />
+            <element signature="e#6585#6586#0" expanded="true" />
+            <element signature="e#6626#6627#0" expanded="true" />
+            <element signature="e#7414#7415#0" expanded="true" />
+            <element signature="e#7455#7456#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -976,7 +1002,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#906#907#0" expanded="false" />
+            <element signature="e#973#974#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1012,9 +1042,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-            <element signature="e#1274#1275#0" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="true" />
+            <element signature="e#1443#1444#0" expanded="true" />
+            <element signature="e#5764#5765#0" expanded="true" />
+            <element signature="e#5805#5806#0" expanded="true" />
+            <element signature="e#6585#6586#0" expanded="true" />
+            <element signature="e#6626#6627#0" expanded="true" />
+            <element signature="e#7414#7415#0" expanded="true" />
+            <element signature="e#7455#7456#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1023,7 +1058,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#906#907#0" expanded="false" />
+            <element signature="e#973#974#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1059,9 +1098,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-            <element signature="e#1274#1275#0" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="true" />
+            <element signature="e#1443#1444#0" expanded="true" />
+            <element signature="e#5764#5765#0" expanded="true" />
+            <element signature="e#5805#5806#0" expanded="true" />
+            <element signature="e#6585#6586#0" expanded="true" />
+            <element signature="e#6626#6627#0" expanded="true" />
+            <element signature="e#7414#7415#0" expanded="true" />
+            <element signature="e#7455#7456#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1070,7 +1114,67 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#906#907#0" expanded="false" />
+            <element signature="e#973#974#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/calculategpa.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3165">
+          <caret line="211" column="85" lean-forward="false" selection-start-line="211" selection-start-column="85" selection-end-line="211" selection-end-column="85" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/computeGPA/gpa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="112" column="33" lean-forward="false" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
+          <folding>
+            <element signature="e#2012#2013#0" expanded="true" />
+            <element signature="e#2060#2061#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unittest/gpaUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1414#1415#0" expanded="true" />
+            <element signature="e#1443#1444#0" expanded="true" />
+            <element signature="e#5764#5765#0" expanded="true" />
+            <element signature="e#5805#5806#0" expanded="true" />
+            <element signature="e#6585#6586#0" expanded="true" />
+            <element signature="e#6626#6627#0" expanded="true" />
+            <element signature="e#7414#7415#0" expanded="true" />
+            <element signature="e#7455#7456#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EmptyTemplateForChrome_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#906#907#0" expanded="false" />
+            <element signature="e#973#974#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1106,9 +1210,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-            <element signature="e#1274#1275#0" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="true" />
+            <element signature="e#1443#1444#0" expanded="true" />
+            <element signature="e#5764#5765#0" expanded="true" />
+            <element signature="e#5805#5806#0" expanded="true" />
+            <element signature="e#6585#6586#0" expanded="true" />
+            <element signature="e#6626#6627#0" expanded="true" />
+            <element signature="e#7414#7415#0" expanded="true" />
+            <element signature="e#7455#7456#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1117,7 +1226,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#906#907#0" expanded="false" />
+            <element signature="e#973#974#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1142,13 +1255,6 @@
     <entry file="file://$PROJECT_DIR$/src/GpaModel.java" />
     <entry file="file://$PROJECT_DIR$/src/TestGpa.java" />
     <entry file="file://$PROJECT_DIR$/src/unittest/setTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/chromedriver">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modelBasedTestingGpa.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1160,7 +1266,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#906#907#0" expanded="false" />
+            <element signature="e#973#974#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1174,15 +1284,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/calculategpa.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="3165">
           <caret line="211" column="85" lean-forward="false" selection-start-line="211" selection-start-column="85" selection-end-line="211" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chromedriver">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="2" column="296" lean-forward="true" selection-start-line="2" selection-start-column="296" selection-end-line="2" selection-end-column="296" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/computeGPA/gpa.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="-3508">
           <caret line="76" column="17" lean-forward="false" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
           <folding>
             <element signature="e#2012#2013#0" expanded="true" />
@@ -1193,12 +1311,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/unittest/gpaUnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4455">
-          <caret line="333" column="82" lean-forward="false" selection-start-line="333" selection-start-column="82" selection-end-line="333" selection-end-column="82" />
+        <state relative-caret-position="-4545">
+          <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-            <element signature="e#1274#1275#0" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="true" />
+            <element signature="e#1443#1444#0" expanded="true" />
+            <element signature="e#5764#5765#0" expanded="true" />
+            <element signature="e#5805#5806#0" expanded="true" />
+            <element signature="e#6585#6586#0" expanded="true" />
+            <element signature="e#6626#6627#0" expanded="true" />
+            <element signature="e#7414#7415#0" expanded="true" />
+            <element signature="e#7455#7456#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -8,10 +8,14 @@ import computeGPA.gpa;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.junit.*;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -371,95 +375,161 @@ public class gpaUnitTest
 
     @Test
     public void test_getSummaryMessage_1234591011121314151620(){
-        gpaObject.setCourse("courseOne", "3", "F");
-        gpaObject.setCourse("courseTwo", "3", "C");
-        gpaObject.setCourse("courseThree", "3", "C");
-        gpaObject.setCourse("courseFour", "3", "C");
-        gpaObject.setCourse("courseFive", "3", "B");
-        gpaObject.setCourse("courseSix", "3", "B");
-        gpaObject.setCourse("courseSeven", "3", "B");
-        gpaObject.setCourse("courseEight", "3", "B");
-        gpaObject.setCourse("courseNine", "3", "B");
-        gpaObject.setCourse("courseTen", "3", "B");
-        gpaObject.setCourse("courseEleven", "3", "B");
-        gpaObject.setCourse("courseTwelve", "3", "B");
-        String result = gpaObject.getSummaryMessage();
-        String groundTruth = "Fs cannot be used to graduate, so are not included in the total number of hours accumulated.\n"
-                + "Fs are also not included in your GPA calculation.<br/><br/>\n"
-                + "Only 2 grades of C are allowed for graduation and 3 were submitted, so the additional Cs are not included in the total number of hours accumulated.<br/><br/>\n"
-                + "You have 30 hours, which is enough to graduate with an MS degree.<br/>\n"
-                + "However, you do not have the minimum GPA of 3.0.<br/>\n";
-        assertEquals("getSummaryMessage_1234591011121314151620_Wrong", groundTruth, result);
+        driver.findElement(By.name("courseName1")).sendKeys("courseName1");
+//        driver.findElement(By.name("courseCredit1")).sendKeys("3");
+        driver.findElement(By.xpath("(//input[@type='radio'])[8]")).click();
+        driver.findElement(By.tagName("a")).click();
+
+        for(int i = 2; i <= 4; i++)
+        {
+            String coursename = "courseName" + i;
+            String creditname = "courseCredit" + i;
+            driver.findElement(By.name(coursename)).sendKeys(coursename);
+//            driver.findElement(By.name(creditname)).sendKeys("3");
+            int index = 7 + (i - 1) * 8;
+            driver.findElement(By.xpath("(//input[@type='radio'])[" + index + "]")).click();
+            driver.findElement(By.tagName("a")).click();
+        }
+
+        for(int i = 5; i <= 12; i++)
+        {
+            String coursename = "courseName" + i;
+            String creditname = "courseCredit" + i;
+            driver.findElement(By.name(coursename)).sendKeys(coursename);
+//            driver.findElement(By.name(creditname)).sendKeys("3");
+            int index = 5 + (i - 1) * 8;
+            driver.findElement(By.xpath("(//input[@type='radio'])[" + index + "]")).click();
+            driver.findElement(By.tagName("a")).click();
+        }
+
+        driver.findElement(By.name("submitCourses")).click();
+        String groundTruth1 = "Fs cannot be used to graduate, so are not included in the total number of hours accumulated.\n" +
+                "Fs are also not included in your GPA calculation.";
+        String groundTruth2 = "Only 2 grades of C are allowed for graduation and 3 were submitted, so the additional Cs are not included in the total number of hours accumulated.";
+        String groundTruth3 = "You have 33 hours, which is enough to graduate with an MS degree.";
+        boolean messageCorrect1 = driver.getPageSource().contains(groundTruth1);
+        boolean messageCorrect2 = driver.getPageSource().contains(groundTruth2);
+        boolean messageCorrect3 = driver.getPageSource().contains(groundTruth3);
+        boolean messageCorrect = messageCorrect1 && messageCorrect2 && messageCorrect3;
+        assertEquals("getSummaryMessage_1234591011121314151620_Wrong", true, messageCorrect);
     }
 
     @Test
     public void test_getSummaryMessage_1234691012141520()
     {
-        gpaObject.setCourse("courseTwo", "3", "C");
-        gpaObject.setCourse("courseThree", "3", "C");
-        gpaObject.setCourse("courseFour", "3", "C");
-        gpaObject.setCourse("courseFive", "3", "A");
-        gpaObject.setCourse("courseSix", "3", "A");
-        gpaObject.setCourse("courseSeven", "3", "A");
-        gpaObject.setCourse("courseEight", "3", "A");
-        gpaObject.setCourse("courseNine", "3", "A");
-        gpaObject.setCourse("courseTen", "3", "A");
-        gpaObject.setCourse("courseEleven", "3", "A");
-        gpaObject.setCourse("courseTwelve", "3", "A");
-        String result = gpaObject.getSummaryMessage();
-        String groundTruth = "Only 2 grades of C are allowed for graduation and 3 were submitted, so the additional Cs are not included in the total number of hours accumulated.<br/><br/>\n"
-                + "You have 30 hours, which is enough to graduate with an MS degree.<br/>\n";
-        assertEquals("getSummaryMessage_1234691012141520_Wrong", groundTruth, result);
+        for(int i = 1; i <= 3; i++)
+        {
+            String coursename = "courseName" + i;
+            String creditname = "courseCredit" + i;
+            driver.findElement(By.name(coursename)).sendKeys(coursename);
+//            driver.findElement(By.name(creditname)).sendKeys("3");
+            int index = 7 + (i - 1) * 8;
+            driver.findElement(By.xpath("(//input[@type='radio'])[" + index + "]")).click();
+            driver.findElement(By.tagName("a")).click();
+        }
+
+        for(int i = 4; i <= 11; i++)
+        {
+            String coursename = "courseName" + i;
+            String creditname = "courseCredit" + i;
+            driver.findElement(By.name(coursename)).sendKeys(coursename);
+//            driver.findElement(By.name(creditname)).sendKeys("3");
+            int index = 2 + (i - 1) * 8;
+            driver.findElement(By.xpath("(//input[@type='radio'])[" + index + "]")).click();
+            driver.findElement(By.tagName("a")).click();
+        }
+
+        driver.findElement(By.name("submitCourses")).click();
+        String groundTruth = "Only 2 grades of C are allowed for graduation and 3 were submitted, so the additional Cs are not included in the total number of hours accumulated.";
+//        String groundTruth = "Only 2 grades of C are allowed for graduation and 3 were submitted, so the additional Cs are not included in the total number of hours accumulated.<br/><br/>\n"
+//                + "You have 33 hours, which is enough to graduate with an MS degree.<br/>\n";
+        boolean messageCorrect = driver.getPageSource().contains(groundTruth);
+        assertEquals("getSummaryMessage_1234691012141520_Wrong", true, messageCorrect);
     }
 
     @Test
     public void test_getSummaryMessage_123791011121417181920()
     {
-        gpaObject.setCourse("courseTwo", "3", "F");
-        gpaObject.setCourse("courseThree", "3", "A");
-        gpaObject.setCourse("courseFour", "3", "A");
-        gpaObject.setCourse("courseFive", "3", "A");
-        gpaObject.setCourse("courseSix", "3", "A");
-        gpaObject.setCourse("courseSeven", "3", "A");
-        gpaObject.setCourse("courseEight", "3", "A");
-        String result = gpaObject.getSummaryMessage();
-        String groundTruth = "Fs cannot be used to graduate, so are not included in the total number of hours accumulated.\n"
-                + "Fs are also not included in your GPA calculation.<br/><br/>\n"
-                + "You need 12 more hours to graduate.<br/>\n"
-                + "You must average a GPA of 2.0 (at least a C average) in those classes\n"
-                + "to graduate with a GPA of 3.0 or above.<br/>\n"
-                + "Also, you may only use two grades of C in your MS degree.<br/>\n";
-        assertEquals("getSummaryMessage_123791011121417181920_Wrong", groundTruth, result);
+        driver.findElement(By.name("courseName1")).sendKeys("courseName1");
+//        driver.findElement(By.name("courseCredit1")).sendKeys("3");
+        driver.findElement(By.xpath("(//input[@type='radio'])[8]")).click();
+        driver.findElement(By.tagName("a")).click();
+
+        for(int i = 2; i <= 7; i++)
+        {
+            String coursename = "courseName" + i;
+            String creditname = "courseCredit" + i;
+            driver.findElement(By.name(coursename)).sendKeys(coursename);
+//            driver.findElement(By.name(creditname)).sendKeys("3");
+            int index = 2 + (i - 1) * 8;
+            driver.findElement(By.xpath("(//input[@type='radio'])[" + index + "]")).click();
+            driver.findElement(By.tagName("a")).click();
+        }
+
+        driver.findElement(By.name("submitCourses")).click();
+        String groundTruth1 = "Fs cannot be used to graduate, so are not included in the total number of hours accumulated.\n" +
+                "Fs are also not included in your GPA calculation";
+        String groundTruth2 = "You need 9 more hours to graduate.";
+
+        boolean messageCorrect1 = driver.getPageSource().contains(groundTruth1);
+        boolean messageCorrect2 = driver.getPageSource().contains(groundTruth2);
+        boolean messageCorrect = messageCorrect1 && messageCorrect2;
+        assertEquals("getSummaryMessage_123791011121417181920_Wrong", true, messageCorrect);
     }
 
     @Test
     public void test_getSummaryMessage_12389101214171920()
     {
-        gpaObject.setCourse("courseTwo", "3", "F");
-        gpaObject.setCourse("courseThree", "3", "B");
-        gpaObject.setCourse("courseFour", "3", "B");
-        gpaObject.setCourse("courseFive", "3", "B");
-        gpaObject.setCourse("courseSix", "3", "B");
-        gpaObject.setCourse("courseSeven", "3", "B-");
-        gpaObject.setCourse("courseEight", "3", "B");
-        String result = gpaObject.getSummaryMessage();
-        String groundTruth = "Fs cannot be used to graduate, so are not included in the total number of hours accumulated.\n"
-                + "Fs are also not included in your GPA calculation.<br/><br/>\n"
-                + "You need 12 more hours to graduate.<br/>\n"
-                + "You must average a GPA of 3.0824997 (at least a B+ average) in those classes\n"
-                + "to graduate with a GPA of 3.0 or above.<br/>\n"
-                + "Also, you may only use two grades of C in your MS degree.<br/>\n";
-        assertEquals("getSummaryMessage_12389101214171920_Wrong", groundTruth, result);
+        driver.findElement(By.name("courseName1")).sendKeys("courseName1");
+//        driver.findElement(By.name("courseCredit1")).sendKeys("3");
+        driver.findElement(By.xpath("(//input[@type='radio'])[8]")).click();
+        driver.findElement(By.tagName("a")).click();
+
+        driver.findElement(By.name("courseName1")).sendKeys("courseName1");
+//        driver.findElement(By.name("courseCredit1")).sendKeys("3");
+        driver.findElement(By.xpath("(//input[@type='radio'])[14]")).click();
+        driver.findElement(By.tagName("a")).click();
+
+        for(int i = 3; i <= 7; i++)
+        {
+            String coursename = "courseName" + i;
+            String creditname = "courseCredit" + i;
+            driver.findElement(By.name(coursename)).sendKeys(coursename);
+//            driver.findElement(By.name(creditname)).sendKeys("3");
+            int index = 5 + (i - 1) * 8;
+            driver.findElement(By.xpath("(//input[@type='radio'])[" + index + "]")).click();
+            driver.findElement(By.tagName("a")).click();
+        }
+
+        driver.findElement(By.name("submitCourses")).click();
+        String groundTruth1 = "Fs cannot be used to graduate, so are not included in the total number of hours accumulated.\n" +
+                "Fs are also not included in your GPA calculation.";
+        String groundTruth2 = "You need 9 more hours to graduate.";
+        String groundTruth3 = "You must average a GPA of 2.7766664 (at least a B average) in those classes\n" +
+                "to graduate with a GPA of 3.0 or above.";
+        boolean messageCorrect1 = driver.getPageSource().contains(groundTruth1);
+        boolean messageCorrect2 = driver.getPageSource().contains(groundTruth2);
+        boolean messageCorrect3 = driver.getPageSource().contains(groundTruth3);
+        boolean messageCorrect = messageCorrect1 && messageCorrect2 && messageCorrect3;
+        assertEquals("getSummaryMessage_12389101214171920_Wrong", true, messageCorrect);
     }
 
     @Test
     public void test_getHours_12324()
     {
+        driver.findElement(By.name("courseName1")).sendKeys("courseNameTest");
+//        driver.findElement(By.name("courseCredit1")).sendKeys("3");
+        WebElement element = driver.findElement(By.xpath("(//input[@type='radio'])[1]"));
+        element.click();
+        WebElement addMore = driver.findElement(By.tagName("a"));
+        addMore.click();
+        addMore.click();
+        addMore.click();
         gpaObject.setCourse("courseTwo", "3", "F");
         gpaObject.setCourse("courseThree", "3", "B");
         gpaObject.setCourse("courseFour", "3", "B");
         gpaObject.setCourse("courseFive", "3", "B");
-        assertEquals("getHours_12324_Wrong", 12, gpaObject.getHours());
+        assertEquals("getHours_12324_Wrong", "You have "+ gpaObject.getHours() + " hours", "You have 12 hours");
     }
 
     @Test
@@ -471,11 +541,20 @@ public class gpaUnitTest
     @Test
     public void test_getNeededGPA_12324()
     {
-        gpaObject.setCourse("courseTwo", "3", "F");
-        gpaObject.setCourse("courseThree", "3", "B");
-        gpaObject.setCourse("courseFour", "3", "B");
-        gpaObject.setCourse("courseFive", "3", "B");
-        assertEquals("getNeededGPA_12324_Wrong", 3.5, gpaObject.getNeededGPA(), 0);
+        driver.findElement(By.name("courseName1")).sendKeys("courseNameTest");
+//        driver.findElement(By.name("courseCredit1")).sendKeys("3");
+        WebElement element = driver.findElement(By.xpath("(//input[@type='radio'])[1]"));
+        element.click();
+        WebElement addMore = driver.findElement(By.tagName("a"));
+        addMore.click();
+        addMore.click();
+        addMore.click();
+        driver.findElement(By.name("submitCourses")).click();
+        gpaObject.setCourse("courseTwo", "3", "A");
+        gpaObject.setCourse("courseThree", "3", "A");
+        gpaObject.setCourse("courseFour", "3", "A");
+        gpaObject.setCourse("courseFive", "3", "A");
+        assertEquals("getNeededGPA_12324_Wrong", "You must average a GPA of " + gpaObject.getNeededGPA(), "You must average a GPA of 2.3333333");
     }
 
 
